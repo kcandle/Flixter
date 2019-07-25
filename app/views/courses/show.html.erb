@@ -5,16 +5,16 @@
   <%= image_tag @course.image, class: 'img-fluid' %>
   <br />
   <div class="row">
-  <div class="col-sm-4 col-12">
-    <span class="badge badge-default">
-      <%= number_to_currency @course.cost %>
-    </span>
+    <div class="col-sm-4 col-12">
+      <span class="badge badge-default">
+        <%= number_to_currency @course.cost %>
+      </span>
 
-    <% if current_user && current_user == @course.user %>
-      <br />
-      <br />
-      <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
-    <% end %>
+      <% if current_user && current_user == @course.user %>
+        <br />
+        <br />
+        <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+      <% end %>
   </div>
 
   <div class="col-sm-8 col-12">
@@ -33,4 +33,5 @@
       </div>
     <% end %>
   </div>
+</div>
 </div>

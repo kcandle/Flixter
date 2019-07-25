@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_07_24_233001) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "Image"
+    t.string "image"
     t.index ["user_id"], name: "index_courses_on_user_id"
   end
 
